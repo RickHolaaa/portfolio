@@ -2,15 +2,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html,body{
+html{
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
-
 }
 
-.container-fluid{
-    background-image: url("./img/bg.png");
+.bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     display: flex;
@@ -18,15 +26,85 @@ html,body{
     justify-content: center;
 }
 
+.bg-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* apply the blur */
+    pointer-events: none; /* make the overlay click-through */
+    filter: brightness(20%);
+    color: white;
+}
+
+.container-fluid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    background-color: white;
+    border-radius: 25px;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+}
+
+.bg-form{
+    width: 50%;
+    height: 100%;    
+    border-radius: 25px 0px 0px 25px;
+    background: linear-gradient(270deg, #5500ff, #3199ff);
+    background-size: 400% 400%;
+    animation: AnimationName 9s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.txt-form{
+    width: 50%;
+    height: 100%;    
+    background-color: white;
+    border-radius: 0px 25px 25px 0px;
+    color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+}
 
 
+.formulaire{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+}
 
+form h1{
+    text-align: center;
+}
 
+form{
+    width: 80%;
+}
 
+.btn-primary{
+    width: 100% !important;
+}
 
-
-
-
+.signup{
+    text-align: center;
+}
 
 
 

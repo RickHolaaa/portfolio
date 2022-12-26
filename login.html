@@ -5,13 +5,48 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css/style_login.css">
 
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- FONTS -->
+        <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); </style>
     </head>
     <body>
+        <div class="bg-img"></div>
         <div class="container-fluid">
             <div class="row">
-                <form>
-                    <p>Test</p>
-                </form>
+                <div class="formulaire">
+                    <div class="col-md-6 bg-form">
+                    </div>
+                    <div class="col-md-6 txt-form">
+                        <form>
+                            <br>
+                            <h1>Login</h1>
+                            <br><br><br>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <small style="float: right;"><a>Forget password ?</a></small>
+                                </div>
+                              <br><br>
+                              <button type="submit" class="btn btn-primary">Login</button>
+                              <br><br><br>
+                              <div class="signup">
+                                <small>Or Sign Up Using</small>
+                                <br>
+                                <small><a href="./signup.html">SIGN UP</a></small>
+                              </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
